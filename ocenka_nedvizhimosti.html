@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Оценка недвижимости | Оценка РБК </title>
+    <link rel="stylesheet" href="./font/stylesheet.css" />
+    <link rel="stylesheet" href="./header-footer.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__menu menu">
+            <a href="index.html"><img class="menu__logo" src="./img/logo/logo.png" alt="logo">
+                <img class="menu__logo-mobile" src="./img/logo/logo-mini.png" alt="logo-mini"></a>
+            <button class="menu__btn"> </button>
+            <ul class="menu__nav-mobile">
+                <a class="menu-nav__link" href="#evaluation-section">
+                    <li class="nav-list__text">Услуги оценки</li>
+                </a>
+                <a class="menu-nav__link" href="#prices">
+                    <li class="nav-list__text">Цены</li>
+                </a>
+                <a class="menu-nav__link" href="#contacts">
+                    <li class="nav-list__text">Контакты</li>
+                </a>
+            </ul>
+            <nav class="menu__nav nav">
+                <ul class="nav__list">
+                    <li class="nav-list__li">
+                        <a class="nav-list__text" id="nested">Услуги оценки</a>
+                        <ul class="nav-list__nested nav__list">
+                            <a href="ocenka_nedvizhimosti.html" class="menu-nav__link">
+                                <li class="nested__li nav-list__text">Недвижимость</li>
+                            </a>
+                            <a class="menu-nav__link" href="#">
+                                <li class="nested__li nav-list__text">Жилая недвижимость</li>
+                            </a>
+                            <a class="menu-nav__link" href="#">
+                                <li class="nested__li nav-list__text">Аренда</li>
+                            </a>
+                            <a class="menu-nav__link" href="#">
+                                <li class="nested__li nav-list__text">Бизнес</li>
+                            </a>
+                            <a class="menu-nav__link" href="#">
+                                <li class="nested__li nav-list__text">Транспорт</li>
+                            </a>
+                            <a class="menu-nav__link" href="#">
+                                <li class="nested__li nav-list__text">Ущерб</li>
+                            </a>
+                            <a class="menu-nav__link" href="#">
+                                <li class="nested__li nav-list__text">Машины и оборудование</li>
+                            </a>
+                            <a class="menu-nav__link" href="#">
+                                <li class="nested__li nav-list__text">Ценные бумаги</li>
+                            </a>
+                            <a class="menu-nav__link" href="#">
+                                <li class="nested__li nav-list__text">Оспаривание кадастровой стоимости</li>
+                            </a>
+                            <a class="menu-nav__link" href="#">
+                                <li class="nested__li nav-list__text">Консультации по вопросам недвижимости</li>
+                            </a>
+
+                        </ul>
+                    </li>
+                    <li class="nav-list__li"><a class="nav-list__text" href="#prices">Цены</a></li>
+                    <li class="nav-list__li"><a class="nav-list__text" href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <div class="header__tel">
+                    <img class="contacts__img" src="./img/icon/phone-symbol.png" alt="phone-symbol">
+                    <div>
+                        <a class="contacts__text" href="tel:+79113382707">8-911-338-27-07</a><br>
+                        <a class="contacts__text" href="tel:+78152605033">8(8152)60-50-33</a>
+                    </div>
+
+                </div>
+                <div class="header__email">
+                    <img class="contacts__img" src="./img/icon/mail-u2246.png" alt="mail">
+                    <a class="contacts__text" href="mailto:nvnekrasova@yandex.ru">nvnekrasova@yandex.ru</a></div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="footer__menu menu">
+            <a href="index.html"><img class="menu__logo" src="./img/logo/logo.png" alt="logo"></a>
+            <nav class="menu__nav nav">
+                <ul class="nav__list">
+                    <li class="nav-list__li">
+                        <a class="nav-list__text" href="#evaluation-section">Услуги оценки</a>
+                    </li>
+                    <li class="nav-list__li">
+                        <a class="nav-list__text" href="#prices">Цены</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <div class="header__tel">
+                    <img class="contacts__img" src="./img/icon/phone-symbol.png" alt="phone-symbol">
+                    <div>
+                        <a class="contacts__text" href="tel:+79113382707">8-911-338-27-07</a><br>
+                        <a class="contacts__text" href="tel:+78152605033">8(8152)60-50-33</a>
+                    </div>
+    
+                </div>
+                <div class="header__email">
+                    <img class="contacts__img" src="./img/icon/mail-u2246.png" alt="mail">
+                    <a class="contacts__text" href="mailto:nvnekrasova@yandex.ru">nvnekrasova@yandex.ru</a></div>
+            </div>
+        </div>
+    
+        <footer class="footer" id="contacts">
+            <div class="footer__containers">
+                <h2 class="footer__caption">Заявка на консультацию</h2>
+                <form>
+                    <label class="footer-form__label" for="name">Имя:</label>
+                    <input class="footer-form__input" type="text" name="name" placeholder="Введите имя">
+                    <label class="footer-form__label" for="email">Электронная почта:</label>
+                    <input class="footer-form__input" type="email" name="email"
+                        placeholder="Введите адрес электронной почты">
+                    <label class="footer-form__label" for="tel">Телефон:</label>
+                    <input class="footer-form__input" type="tel" name="tel" placeholder="Введите номер телефона">
+                    <input class="footer-form__submit-btn" type="submit" value="Отправить">
+                </form>
+            </div>
+            <div class="footer__containers">
+                <p class="header-discreption__text">
+                    Адрес офиса: 183032, город Мурманск<br>
+                    проспект Кольский 6, офис 2</p>
+                <p class="header-discreption__text">
+                    Контакты в Калининграде: <br>
+                    8-909-798-81-80, 8-921-272-50-40</p>
+                <p class="header-discreption__text">
+                    График работы: <br>
+                    с 10 до 18, и в субботу - с 10 до 17 <br>
+                    воскресенье - выходной
+                </p>
+            </div>
+            <div class="section-caption__line footer__line"></div>
+        </footer>
+</body>
