@@ -61,7 +61,7 @@ body {
 .nav-list__nested {
     position: absolute;
     font-size: 0.8em;
-    padding: 0;
+    padding: 10px 0;
     margin: 0 0 0 -20px;
     background-color: white;
 }
@@ -106,6 +106,12 @@ body {
     text-decoration: none;
 }
 
+.section-caption__line {
+    height: 5px;
+    width: 200px;
+    background-color: var(--blue);
+    margin: 0 auto;
+}
 
 .footer__menu {
     margin: 57px auto;
@@ -190,6 +196,10 @@ body {
         padding: 0;
     }
 
+    .nav-list__nested{
+        padding: 10px 0;
+    }
+
     .nav-list__text,
     .contacts__text {
         font-size: 0.85em;
@@ -201,7 +211,7 @@ body {
     }
 
     .footer {
-        padding-top: 40px;;
+        padding-top: 40px;
         padding-left: 6%;
         padding-right: 9%;
     }
@@ -257,6 +267,7 @@ body {
         background-image: url(./img/menu_icon.svg);
         background-color: unset;
         border: none;
+        outline: none;
     }
 
     .menu {
@@ -264,6 +275,7 @@ body {
     }
 
     .menu__nav-mobile {
+        list-style: none;
         position: absolute;
         top: 85px;
         right: 0;

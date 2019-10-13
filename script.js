@@ -6,7 +6,7 @@ $(document).ready(function () {
         ($('.evaliation-main__block').eq(indexBtn)).toggleClass('active').hide().fadeIn("slow");
     });
     $('.nav__list li ul').hide();
-    $('.menu__nav-mobile').hide();
+    $('.menu__btn + ul').hide();
     $('li').hover(
         function () {
             $('ul', this).fadeIn(100);
@@ -16,13 +16,17 @@ $(document).ready(function () {
         }
     );
 
-    $('.menu__btn').hover(
+    $(".menu__btn").hover(
         function () {
-            $('ul', this).fadeIn(100);
+            $(this).next("ul").fadeIn(100);
         },
         function () {
-            $('ul', this).fadeOut(100);
+            $(this).next("ul").slideUp('medium');
         }
     );
 
+    var z = Math.ceil(  $(".rent-types__item").size()- ($(".rent-types").width()/150));
+    for (i = 0; i < z; i++) {
+        $(".rent-types__item").eq(i+1).css("display", "none");
+    }
 });
