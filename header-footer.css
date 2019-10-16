@@ -191,20 +191,26 @@ body {
     .menu {
         width: 100%;
     }
+    
+    .menu__logo {
+        width: 100px;
+        margin-top: 10px;
+    }
 
     .nav__list {
         padding: 0;
-    }
-
-    .nav-list__nested{
-        padding: 10px 0;
     }
 
     .nav-list__text,
     .contacts__text {
         font-size: 0.85em;
     }
-    
+
+     .nav-list__nested{
+        padding: 10px 0;
+        font-size: 0.9em;
+    }
+
     .footer__menu{
         width: 78%;
         margin: 40px 0 0 6%;
@@ -251,6 +257,7 @@ body {
     .nav-list__li {
         padding-right: 10px;
     }
+
     .menu__logo-mobile {
         display: block;
         width: 100px;
@@ -263,7 +270,7 @@ body {
         height: 26px;
         width: 26px;
         padding: 0;
-        margin: 25px 35px 20px;
+        margin: 25px 20px 20px;
         background-image: url(./img/menu_icon.svg);
         background-color: unset;
         border: none;
@@ -280,6 +287,7 @@ body {
         top: 85px;
         right: 0;
         padding: 0;
+        padding-right: 6%;
         margin: 0;
         z-index: 1;
         text-align: center;
@@ -287,6 +295,11 @@ body {
         background-color: white;
     }
 
+    .menu__btn + ul > a > li {
+        margin-top: 3px;   
+        border: 1px solid var(--blue);
+    }
+    
     .nav-list__text:hover {
         background-color: var(--light-grey);
     }
